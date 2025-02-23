@@ -7,6 +7,7 @@ import Footer from './components/Footer'
 import MainContent from './components/MainContent'
 
 import UserProfile from './components/UserProfile'
+import Counter from './components/Counter'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -14,7 +15,7 @@ function App() {
   return (
     <>
 
-
+      <Counter></Counter>
       
       <Header />
 
