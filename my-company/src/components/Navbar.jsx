@@ -7,7 +7,7 @@ function Navbar() {
 
     <nav style={{padding: "1rem", backgroundColor: "#f0f0f0"}}>
 
-      <ul style={{display: "flex", flexDirection:"row", listStyle: "none", gap: "1rem", textDecoration: "none"}}>
+      <ul style={{display: "flex", flexDirection:"row", listStyle: "none", gap: "rem", textDecoration: "none", justifyContent: "center"}}>
 
         <li>
           <Link to="/">Home</Link>
