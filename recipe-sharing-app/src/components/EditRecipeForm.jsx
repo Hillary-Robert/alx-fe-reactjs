@@ -10,8 +10,8 @@ const EditRecipeForm = ({ recipe }) => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSubmit = (event) => {
+    event.preventDefault();
     updateRecipe(formData);
   };
 
