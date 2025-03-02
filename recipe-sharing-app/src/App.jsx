@@ -1,7 +1,6 @@
 import { useState } from 'react'
-import AddRecipeForm from './AddRecipeForm'
-import RecipeList from './RecipeList'
-
+import AddRecipeForm from './AddRecipeForm/AddRecipeForm'
+import RecipeList from './RecipeList/RecipeList'
 
 function App() {
   
