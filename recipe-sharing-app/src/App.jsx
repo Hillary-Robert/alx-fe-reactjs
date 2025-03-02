@@ -1,17 +1,14 @@
 import { useState } from 'react'
-import AddRecipeForm from './Components/AddRecipeForm/AddRecipeForm'
-import RecipeList from './Components/RecipeList/RecipeList'
+import RecipeList from './components/RecipeList'
+import AddRecipeForm from './components/AddRecipeForm'
 
 function App() {
   
 
   return (
     <>
-
       <RecipeList></RecipeList>
       <AddRecipeForm></AddRecipeForm>
-
-      
     </>
   )
 }
