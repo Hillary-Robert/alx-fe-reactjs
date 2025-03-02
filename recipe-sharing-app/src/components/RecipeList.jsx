@@ -1,3 +1,4 @@
+import DeleteRecipeButton from "./DeleteRecipeButton";
 import useRecipeStore from "./recipeStore";
 
 const RecipeList = () => {
@@ -9,6 +10,7 @@ const RecipeList = () => {
         <div key={recipe.id}>
           <h3>{recipe.title}</h3>
           <p>{recipe.description}</p>
+          <DeleteRecipeButton recipeId={recipe.id} />
         </div>
       ))}
     </div>
