@@ -1,15 +1,14 @@
-import React from 'react'
-import useRecipeStore from './recipeStore'
+import React from 'react';
+import useRecipeStore from './recipeStore';
 
-export const DeleteRecipeButton = (recipeId) => {
+const DeleteRecipeButton = ({ recipeId }) => {
   const deleteRecipe = useRecipeStore((state) => state.deleteRecipe);
 
   return (
-    <button onClick={() => deleteRecipe(recipeId)} style={{ backgroundColor: 'red', color: 'white' }}>
+    <button onClick={() => deleteRecipe(recipeId)} style={{ marginLeft: '10px', color: 'red' }}>
       Delete
     </button>
   );
-}
+};
 
-
-export default DeleteRecipeButton
+export default DeleteRecipeButton;

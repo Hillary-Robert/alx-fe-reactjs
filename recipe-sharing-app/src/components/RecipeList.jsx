@@ -1,6 +1,6 @@
 import React, { useState } from "react";
+import { Link } from 'react-router-dom';
 import DeleteRecipeButton from "./DeleteRecipeButton";
-import EditRecipeForm from "./EditRecipeForm";
 import useRecipeStore from "./recipeStore";
 
 const RecipeList = () => {
@@ -12,6 +12,7 @@ const RecipeList = () => {
         <div key={recipe.id}>
           <h3>{recipe.title}</h3>
           <p>{recipe.description}</p>
+          <Link to={`/recipe/${recipe.id}`}>View Details</Link>
           <DeleteRecipeButton recipeId={recipe.id} />
 
          
@@ -19,17 +20,7 @@ const RecipeList = () => {
     
         
       ))}
-
-      {/* Render Edit Form when a recipe is selected for editing */}
-      {editingId && (
-        <EditRecipeForm
-          recipeId={editingId}
-          onClose={() => setEditingId(null)}
-        />
-      )}
-
-
-        
+    
     </div>
   );
 };
